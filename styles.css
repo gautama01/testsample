@@ -1,6 +1,6 @@
 /* styles.css */
 
-/* Estilos del menú normal */
+/* Desktop */
 header {
   display: flex;
   justify-content: center;
@@ -129,7 +129,7 @@ header {
 .countdown-section {
   height: 600px;
   background-image: url('src/img/Rectangle 10.png');
-  background-size: 30vw 100%;
+  background-size: 50% 100%;
   background-position: right ;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -142,8 +142,8 @@ header {
 
 .countdown-box {
   display: flex;
-  width: 100%;
-  padding: 41px 36px;
+  width: 80%;
+  padding: 40px 30px;
   flex-direction: column;
   align-items: center;
   align-content: center;
@@ -155,12 +155,12 @@ header {
 
 .countdown-section h2 {
   display: flex;
-  width: 100%;
+  width: 80%;
   flex-direction: column;
   color: #333;
   text-align: center;
   font-family: Montserrat;
-  font-size: 2vw;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 158.4%;
@@ -169,7 +169,7 @@ header {
 .countdown-label {
   display: inline-block;
   font-family: Montserrat;
-  font-size: 1vw;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 158.4%;
@@ -181,7 +181,7 @@ header {
 .countdown-numbers {
   display: inline-block;
   font-family: Montserrat;
-  font-size: 2vw;
+  font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: 177.9%;
@@ -219,16 +219,16 @@ header {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 657px) {
   .countdown-section {
-    height: auto;
+    height: 100%;
     margin-top: 10px;
     padding: 50px 0;
+
   }
 
   .countdown-box {
-    width: 90%;
-    max-width: 320px;
+    width: 150px;
     padding: 30px;
     margin-bottom: 20px;
   }
@@ -241,16 +241,17 @@ header {
 
   .countdown-label {
     font-size: 12px;
-    margin-right: 8px;
+    margin-right: 2px;
     margin-bottom: 5px;
   }
 
   .countdown-numbers {
-    font-size: 22px;
-    line-height: 1.2;
-    margin-bottom: 5px;
-    margin-right: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    margin-right: 10px;
   }
+
 
   .faq-section {
     padding: 20px;
@@ -265,5 +266,13 @@ header {
   }
 }
 
+.faq-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 
