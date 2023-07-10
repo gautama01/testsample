@@ -17,7 +17,7 @@ function countdown() {
       <span class="countdown-label">DAYS</span> <span class="countdown-numbers">${days}</span> 
       <span class="countdown-label">HOURS</span> <span class="countdown-numbers">${hours}</span>
       <span class="countdown-label">MINUTES</span> <span class="countdown-numbers">${minutes}</span>
-      <span class="countdown-label">S</span> <span class="countdown-numbers">${seconds}</span>
+      <span class="countdown-label">SECONDS</span> <span class="countdown-numbers">${seconds}</span>
     `;
 
   } else {
@@ -27,3 +27,17 @@ function countdown() {
 
 countdown();
 setInterval(countdown, 1000);
+
+// Obtener todos los botones de toggle
+const faqToggleBtns = document.querySelectorAll('.faq-toggle-btn');
+
+// Agregar el evento de clic a cada botón de toggle
+faqToggleBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    // Obtener el contenido del acordeón correspondiente al botón de toggle actual
+    const faqContent = btn.nextElementSibling;
+
+    // Alternar la visibilidad del contenido del acordeón
+    faqContent.style.display = faqContent.style.display === 'none' ? 'block' : 'none';
+  });
+});

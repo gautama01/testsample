@@ -63,7 +63,7 @@ header {
   background-size: contain;
   position: fixed;
   top: 40px;
-  right: 10px;
+  right: 20px;
   z-index: 9999;
 }
 
@@ -78,6 +78,7 @@ header {
   background-color: #F9F9F9;
   padding: 10px;
   transition: transform 0.3s ease-in-out;
+  z-index:9999 ;
 }
 
 .mobile-menu .menu li {
@@ -218,6 +219,50 @@ header {
 }
 
 
+@media (max-width: 1000px) {
+  .countdown-section {
+    height: auto;
+    margin-top: 10px;
+    padding: 50px 0;
+  }
+
+  .countdown-box {
+    width: 90%;
+    max-width: 320px;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  .countdown-section h2 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .countdown-label {
+    font-size: 12px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+  }
+
+  .countdown-numbers {
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+
+  .faq-section {
+    padding: 20px;
+  }
+
+  .faq-dropdown {
+    margin-bottom: 10px;
+  }
+
+  .faq-toggle-btn {
+    margin-bottom: 5px;
+  }
+}
 
 
 
