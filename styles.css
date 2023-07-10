@@ -230,13 +230,14 @@ header {
   .countdown-box {
     width: 150px;
     padding: 30px;
+    padding-top: 10px;
     margin-bottom: 20px;
   }
 
   .countdown-section h2 {
     font-size: 20px;
     line-height: 1.4;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 
   .countdown-label {
